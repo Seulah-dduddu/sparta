@@ -15,7 +15,23 @@
       }
       .wrap {
         width: 300px;
-        margin: 50px auto 0 auto; 
+        margin: 20px auto 0 auto; 
+      }
+      .wrap2 {
+        width: 500px;
+        margin: auto auto auto auto;
+        text-align: center; 
+      }
+      .wrap3 {
+        width: 600px;
+        height: 100px;
+         margin: 20px auto 20 auto
+      }
+      .wrap4 {
+        width: 500px;
+        height: 300px;
+        margin: 50px auto auto auto;
+        text-align: center;
       }
 * {
   font-family: 'Song Myung', serif;

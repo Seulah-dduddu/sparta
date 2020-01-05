@@ -27,12 +27,13 @@
         width: 300px;
         margin: 50px auto 0 auto; 
       }
-* {
-  font-family: 'Cute Font', cursive;
-      }
-.div2 {
+      .div2 {
   width: 300px;
   height: 100px;
   padding: 50px;
   border: 1px solid red;
 }
+* {
+  font-family: 'Cute Font', cursive;
+      }
+
