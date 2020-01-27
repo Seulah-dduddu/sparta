@@ -11,35 +11,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<link rel = "stylesheet" type = "text/css" href = "homework_style.css">
 	<link href="https://fonts.googleapis.com/css?family=Song+Myung&display=swap" rel="stylesheet">
-	<script>
-		function q1(){
-			if($('#content-1').val()==''){
-				alert('이름을 입력하세요')
-			}else if($('#content-2').val()==''){
-				alert('수량을 입력하세요')
-			}else if($('#content-3').val()==''){
-				alert('주소를 입력하세요')
-			}else if($('#content-4').val()==''){
-				alert('전화번호를 입력하세요')
-		}
-	}
-	</script>
-	<script>
-		function q3(){
-			if($('#content-3').val()==''){
-				alert('주소를 입력하세요')
-			}
-		}
-	</script>
-	<script>
-		function q4(){
-			if($('#content-4').val()==''){
-				alert('전화번호를 입력하세요')
-			}
-		}
-	</script>
 </head>
-
 <body>
 	<div class="wrap">
 		<h2 class="display-4">🍜국수의 신</h2>
@@ -61,21 +33,22 @@
 				<div>
 					<div class="wrap6">
 						<h2><span class="badge badge-warning">new</span>   3대육수 멸치국수 <h2>
-						</div>
+						</div>\
 						<h4><span style="color:black">상품가격 : 6,500 원 / 2인분 <span></h4>
 							<div class = "wrap3">
 								<h5>매주 일요일 저녁, 명인 유정제 씨는 양파와 파를 다듬습니다. </h5>
-								<h5>야채를 손질하고 국물을 우려내는 그의 마음은 30년째 한결같습니다. </h5>
+								<h5>야채를 손질하고 국물을 우려내는 그의 마음은 30년째 한결 같습니다. </h5>
 							</div>
+							<div>
 							<form>
 								<div class="form-group">
 									<label for="exampleFormControlInput1">주문자 이름: </label>
-									<input id="content-1" type="text" class="form-control">
+									<input type="email" class="form-control" id="exampleFormControlInput1">
 								</div>
 								<div class="form-group">
 									<label for="exampleFormControlSelect1">패키지 수량: </label>
-									<select id='#content-2' class="form-control" id="exampleFormControlSelect1">
-										<option>--수량을 선택하세요--</option>
+									<select class="form-control" id="exampleFormControlSelect1">
+										<option>수량을 선택하세요</option>
 										<option>1인</option>
 										<option>2인</option>
 										<option>3인</option>
@@ -83,19 +56,17 @@
 								</div>
 								<div class="form-group">
 									<label for="exampleFormControlInput1">주소: </label>
-									<input  id="content-3" type="text" class="form-control" id="exampleFormControlInput1">
+									<input type="email" class="form-control" id="exampleFormControlInput1">
 								</div>
 								<div class="form-group">
 									<label for="exampleFormControlInput1">전화번호: </label>
-									<input id="content-4" type="num" class="form-control" id="exampleFormControlInput1">
+									<input type="email" class="form-control" id="exampleFormControlInput1">
 								</div>
 							</div>
 							<div class="wrap4">
-								<button onclick="q1()" type="button" class="btn btn-primary btn-lg btn-block">오늘 저녁은 내가 국수요리사</button>
+								<button type="button" class="btn btn-primary btn-lg btn-block">오늘 저녁은 내가 국수요리사</button>
 							</div>
 						</form>
 					</div>	
 				</body>
 				</html>
-
-
