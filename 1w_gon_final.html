@@ -11,6 +11,40 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<link rel = "stylesheet" type = "text/css" href = "homework_style.css">
 	<link href="https://fonts.googleapis.com/css?family=Song+Myung&display=swap" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			q1();
+		});
+
+		function q1() {
+			$('#names-q1').html('');
+			$.ajax({
+				type: "GET",
+				url: "http://spartacodingclub.shop/order",
+				data: {},
+				success: function(response){
+					let rows = response.orders
+					// console.log(rows);
+					for (let i=0; i < rows.length; i++) {
+						let name = rows[i]['name'];
+						let count = rows[i]['count'];
+						let address = rows[i]['address'];
+						let phone = rows[i]['phone'];
+						let temp_html = '<tr>\
+						<td>'+name+'</td>\
+						<td>'+count+'</td>\
+						<td>'+address+'</td>\
+						<td>'+phone+'</td>\
+						</tr>'
+					$('#names-q1').append(temp_html);
+					}
+				}
+			})
+		}
+	</script>
+
 </head>
 
 
@@ -77,25 +111,7 @@
 					<th scope="col">전화번호</th>
 				</tr>
 			</thead>
-			<tbody>
-				<tr>
-					<th scope="row">1</th>
-					<td>Mark</td>
-					<td>Otto</td>
-					<td>@mdo</td>
-				</tr>
-				<tr>
-					<th scope="row">2</th>
-					<td>Jacob</td>
-					<td>Thornton</td>
-					<td>@fat</td>
-				</tr>
-				<tr>
-					<th scope="row">3</th>
-					<td>Larry</td>
-					<td>the Bird</td>
-					<td>@twitter</td>
-				</tr>
+			<tbody id ="names-q1">
 			</tbody>
 		</table>
 	</div>
